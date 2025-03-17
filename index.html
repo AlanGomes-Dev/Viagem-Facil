@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem Fácil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Viagem Fácil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pacotes">Pacotes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light ms-2" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                    </li>
+                    <a href="/cadastro.html">
+                        <li class="nav-item">
+                            <button class="btn btn-light ms-2" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Cadastrar</button>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal de Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="login-form">
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Senha</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Lembrar-me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                        <div class="text-center mt-3">
+                            <a href="#" class="text-decoration-none">Esqueceu sua senha?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="search-form">
+                <h2>Encontre sua próxima aventura</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Para onde você quer ir?">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="date" class="form-control" placeholder="Data de ida">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="date" class="form-control" placeholder="Data de volta">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control">
+                            <option value="">Número de pessoas</option>
+                            <option value="1">1 pessoa</option>
+                            <option value="2">2 pessoas</option>
+                            <option value="3">3 pessoas</option>
+                            <option value="4+">4 ou mais</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-search">Buscar Agora</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="pacotes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <p>Descubra as melhores opções de viagem com nossa seleção exclusiva de serviços</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Melhores Destinos</h3>
+                        <div class="feature-image-container">
+                            <img src="/img/praia-brava-buzios.jpg" alt="Melhores Destinos" class="feature-image">
+                            <div class="feature-overlay"></div>
+                        </div>
+                        <p>Explore destinos incríveis em todo o mundo com nossas ofertas exclusivas e pacotes
+                            personalizados.</p>
+                        <div class="feature-price">A partir de R$ 1.999</div>
+                        <a href="#destinos" class="feature-btn">Ver Destinos</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Hotéis Exclusivos</h3>
+                        <div class="feature-image-container">
+                            <img src="/img/pousadaartedanatureza.jpg" alt="Hotéis Exclusivos" class="feature-image">
+                            <div class="feature-overlay"></div>
+                        </div>
+                        <p>As melhores acomodações para sua estadia, selecionadas com critério para seu conforto.</p>
+                        <div class="feature-price">A partir de R$ 299/noite</div>
+                        <a href="#hoteis" class="feature-btn">Ver Hotéis</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h3>Melhores Preços</h3>
+                        <div class="feature-image-container">
+                            <img src="/img/felizes-viajando.png" alt="Melhores Preços" class="feature-image">
+                            <div class="feature-overlay"></div>
+                        </div>
+                        <p>Garantimos as melhores ofertas do mercado com nossa política de preços competitivos.</p>
+                        <div class="feature-price">Até 50% OFF</div>
+                        <a href="#ofertas" class="feature-btn">Ver Ofertas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section class="destinations-section" id="destinos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Destinos Populares</h2>
+                <p>Conheça os lugares mais procurados pelos nossos viajantes</p>
+            </div>
+            <div id="destinationsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/Fernando de Noronha.jpg" class="d-block w-100" alt="Fernando de Noronha">
+                        <div class="carousel-caption">
+                            <h3>Fernando de Noronha</h3>
+                            <p>Paraíso brasileiro com praias cristalinas e vida marinha exuberante</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/Natal-Luz-de-Gramado.jpg" class="d-block w-100" alt="Gramado">
+                        <div class="carousel-caption">
+                            <h3>Gramado</h3>
+                            <p>Charme europeu e gastronomia única na Serra Gaúcha</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/maragogi.jpg" class="d-block w-100" alt="Maragogi">
+                        <div class="carousel-caption">
+                            <h3>Maragogi</h3>
+                            <p>O Caribe brasileiro com suas piscinas naturais deslumbrantes</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/chapada-diamantina.png" class="d-block w-100" alt="Chapada Diamantina">
+                        <div class="carousel-caption">
+                            <h3>Chapada Diamantina</h3>
+                            <p>Aventura e natureza em um dos mais belos parques do Brasil</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#destinationsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#destinationsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4>Sobre Nós</h4>
+                    <p>Somos uma agência de viagens comprometida em proporcionar as melhores experiências de viagem para
+                        nossos clientes.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Links Úteis</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinos">Destinos</a></li>
+                        <li><a href="#pacotes">Pacotes</a></li>
+                        <li><a href="#promocoes">Promoções</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4>Contato</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone me-2"></i> (91) 1234-5678</li>
+                        <li><i class="fas fa-envelope me-2"></i> contato@viagemfacil.com.br</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Rua H, Marambaia, 1000 - Bélem PA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Viagem Fácil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script para fazer o carousel funcionar automaticamente
+        document.addEventListener('DOMContentLoaded', function () {
+            var myCarousel = new bootstrap.Carousel(document.getElementById('destinationsCarousel'), {
+                interval: 5000, // Tempo em milissegundos entre os slides
+                wrap: true, // Permite que o carousel continue infinitamente
+                keyboard: true // Permite controle pelo teclado
+            });
+        });
+
+        // Script para navbar transparente/colorida ao rolar
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 700) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
