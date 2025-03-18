@@ -1,46 +1,40 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README - Viagem Fácil</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1, h2, h3 {
-            color: #20B2AA;
-        }
-        img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-        }
-        .video-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        .image-gallery img {
-            width: 45%;
-            max-width: 300px;
-        }
-    </style>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h1, h2, h3 {
+color: #20B2AA;
+}
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.image-gallery img {
+    width: 45%;
+    max-width: 300px;
+}
+</style>
 </head>
 <body>
-    <h1>Viagem Fácil</h1>
+    <h1 color="#20B2AA">Viagem Fácil</h1>
     <p>Este é um site desenvolvido para facilitar a busca por pacotes de viagem, permitindo que os usuários encontrem destinos e serviços com praticidade e eficiência.</p>
 
     <h2>💻 Tecnologias Utilizadas</h2>
