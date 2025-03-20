@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Fundo -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Título -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Modelo Conceitual - Agência de Viagens</text>
+  
+  <!-- Entidade CLIENTE -->
+  <rect x="100" y="100" width="120" height="60" fill="#b8daff" stroke="#007bff" stroke-width="2" rx="5"/>
+  <text x="160" y="135" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">CLIENTE</text>
+  
+  <!-- Entidade PACOTE -->
+  <rect x="400" y="100" width="120" height="60" fill="#c3e6cb" stroke="#28a745" stroke-width="2" rx="5"/>
+  <text x="460" y="135" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">PACOTE</text>
+  
+  <!-- Entidade DESTINO -->
+  <rect x="600" y="250" width="120" height="60" fill="#ffeeba" stroke="#ffc107" stroke-width="2" rx="5"/>
+  <text x="660" y="285" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">DESTINO</text>
+  
+  <!-- Entidade RESERVA -->
+  <rect x="200" y="250" width="120" height="60" fill="#f5c6cb" stroke="#dc3545" stroke-width="2" rx="5"/>
+  <text x="260" y="285" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">RESERVA</text>
+  
+  <!-- Entidade PAGAMENTO -->
+  <rect x="100" y="400" width="120" height="60" fill="#d6d8db" stroke="#6c757d" stroke-width="2" rx="5"/>
+  <text x="160" y="435" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">PAGAMENTO</text>
+  
+  <!-- Entidade HOTEL -->
+  <rect x="400" y="400" width="120" height="60" fill="#bee5eb" stroke="#17a2b8" stroke-width="2" rx="5"/>
+  <text x="460" y="435" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">HOTEL</text>
+  
+  <!-- Entidade ATRACAO -->
+  <rect x="600" y="400" width="120" height="60" fill="#e2c8f0" stroke="#6f42c1" stroke-width="2" rx="5"/>
+  <text x="660" y="435" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">ATRACAO</text>
+  
+  <!-- Relacionamento Cliente-Reserva -->
+  <line x1="160" y1="160" x2="225" y2="250" stroke="#007bff" stroke-width="2"/>
+  <polygon points="229,254 219,246 221,254" fill="#007bff" stroke="#007bff" stroke-width="1"/>
+  <text x="185" y="195" font-family="Arial" font-size="14" fill="#007bff">realiza</text>
+  <text x="185" y="215" font-family="Arial" font-size="14" fill="#007bff">1:N</text>
+  
+  <!-- Relacionamento Reserva-Pacote -->
+  <line x1="320" y1="265" x2="400" y2="145" stroke="#28a745" stroke-width="2"/>
+  <polygon points="404,141 394,149 396,141" fill="#28a745" stroke="#28a745" stroke-width="1"/>
+  <text x="375" y="215" font-family="Arial" font-size="14" fill="#28a745">inclui</text>
+  <text x="375" y="235" font-family="Arial" font-size="14" fill="#28a745">N:1</text>
+  
+  <!-- Relacionamento Pacote-Destino -->
+  <line x1="520" y1="130" x2="600" y2="250" stroke="#ffc107" stroke-width="2"/>
+  <polygon points="604,254 594,246 596,254" fill="#ffc107" stroke="#ffc107" stroke-width="1"/>
+  <text x="575" y="175" font-family="Arial" font-size="14" fill="#ffc107">possui</text>
+  <text x="575" y="195" font-family="Arial" font-size="14" fill="#ffc107">N:1</text>
+  
+  <!-- Relacionamento Reserva-Pagamento -->
+  <line x1="220" y1="310" x2="170" y2="400" stroke="#6c757d" stroke-width="2"/>
+  <polygon points="166,404 176,396 174,404" fill="#6c757d" stroke="#6c757d" stroke-width="1"/>
+  <text x="185" y="355" font-family="Arial" font-size="14" fill="#6c757d">gera</text>
+  <text x="185" y="375" font-family="Arial" font-size="14" fill="#6c757d">1:1</text>
+  
+  <!-- Relacionamento Pacote-Hotel -->
+  <line x1="450" y1="160" x2="450" y2="400" stroke="#17a2b8" stroke-width="2"/>
+  <polygon points="454,404 446,394 446,404" fill="#17a2b8" stroke="#17a2b8" stroke-width="1"/>
+  <text x="465" y="275" font-family="Arial" font-size="14" fill="#17a2b8">inclui</text>
+  <text x="465" y="295" font-family="Arial" font-size="14" fill="#17a2b8">N:N</text>
+  
+  <!-- Relacionamento Pacote-Atracao -->
+  <line x1="520" y1="150" x2="625" y2="400" stroke="#6f42c1" stroke-width="2"/>
+  <polygon points="629,404 619,396 621,404" fill="#6f42c1" stroke="#6f42c1" stroke-width="1"/>
+  <text x="585" y="325" font-family="Arial" font-size="14" fill="#6f42c1">inclui</text>
+  <text x="585" y="345" font-family="Arial" font-size="14" fill="#6f42c1">N:N</text>
+</svg>
